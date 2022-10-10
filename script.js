@@ -68,7 +68,7 @@ console.log(ageJonas, ageSarah);
 console.log(ageJonas * 2, ageJonas / 10, 2 ** 3);
 // 2 ** 3 means 2 to the power of 3 = 2 * 2 * 2
 
-const firstName = 'Jonas';
+//const firstName = 'Jonas';
 const lastName = 'Shoot';
 console.log(firstName + ' ' + lastName);
 
@@ -82,14 +82,14 @@ y--;
 y--;
 console.log(y)
 
-// Comparision operators
+//Comparision operators
 console.log(ageJonas > ageSarah); // >, <, >=, <=
 console.log(ageSarah >= 18); // Sarah is over the age of 18\
 
 const isFullAge = ageSarah >= 18;
 
 console.log(now - 1991 > now - 2018);
-*/
+
 
 const now = 2037; // bellow is the order of operation which can be found on mdm web
 const ageJonas = now - 1994;
@@ -105,3 +105,17 @@ console.log(y, p);
 
 const averageAge = (ageJonas + ageSarah) / 2
 console.log(ageJonas, ageSarah, averageAge);
+*/
+
+// Strings and Template Literals
+
+const firstName = 'Jonas';
+const job = 'teacher';
+const birthYear = 1991;
+const year = 2037;
+
+const jonas = "I'm " + firstName + ', a ' + (year - birthYear) + 'years old ' + job + '!';
+console.log(jonas)
+
+const jonasNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
+console.log(jonasNew)
