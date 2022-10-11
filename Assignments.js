@@ -64,4 +64,44 @@ console.log(bmiMark, bmiJohn, markHighBMI)
 // because the variables are the same I just switched out the values to get the answers, although my results were simular above they
 // were incorrect, I added the results from both test instead of sticking to just one test. Although the answers were roughly the same
 // good lesson in building the framework for simple use. now i have tons of needless variables.
+//Code Challenge 2, use information above to create if/else statments, then use Template literal to log the output of the statments.
+
+if (bmiMark > bmiJohn) {
+    console.log(`Marks BMI (${bmiMark}) is Higher than Johns (${bmiJohn})`)
+} else {
+    console.log(`Johns BMI (${bmiJohn}) is Higher then Marks (${bmiMark})`)
+}
+*/
+
+// Code Challenge 3, 
+/*
+let dolphinAverage = (89 + 96 + 108) / 3
+console.log(dolphinAverage) //97 ave
+
+let koalasAverage = (88 + 91 + 110) / 3
+console.log(koalasAverage) //96 ave
+
+if (dolphinAverage > koalasAverage) {
+    console.log('dolphins win')
+} else if (dolphinAverage === koalasAverage) {
+    console.log('draw')
+} else {
+    console.log('Koalas win')
+}
+*/
+
+let dolphinAverage = (97 + 108 + 101) / 3
+let koalasAverage = (109 + 95 + 106) / 3
+
+if (dolphinAverage > 100 || koalasAverage > 100) {
+    if (dolphinAverage > koalasAverage) {
+        console.log('Dolphins win');
+    } else if (dolphinAverage === koalasAverage) {
+        console.log('Draw');
+    } else {
+        console.log('Koalas win');
+    }
+} else {
+    console.log('No team has higher 100 points')
+}
 
