@@ -108,7 +108,7 @@ console.log(ageJonas, ageSarah, averageAge);
 */
 
 // Strings and Template Literals
-
+/*
 const firstName = 'Jonas';
 const job = 'teacher';
 const birthYear = 1991;
@@ -119,3 +119,127 @@ console.log(jonas)
 
 const jonasNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
 console.log(jonasNew)
+
+console.log('String with \n\
+multiple \n\
+lines'); //old way w/out template strings
+
+console.log(`String
+multiple
+lines`); //template literal way
+/*
+
+// Taking descisions if / esle statments
+/*
+const age = 15;
+if (age >= 18) {
+    console.log('Sarah can start driving license');
+} else {
+    const yearsLeft = 18 - age;
+    console.log(`Sarah is to young. Wait another ${yearsLeft} years`)
+}
+
+const birthYear = 2012;
+let century;
+if (birthYear <= 2000) {
+    century = 20;
+} else {
+    century = 21;
+}
+console.log(century);
+*/
+//Type Conversion / Type Coercion (conversion is when we manually change they type) (Coercion JS auto changes the type)
+/*
+//Type Conversion
+const inputYear = '1991'
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18);
+
+console.log(Number('Jonas'));
+console.log(typeof NaN);
+
+console.log(String(23), 23);
+
+// Type Coercion
+console.log('I am ' + 23 + ' years old');
+console.log('I am ' + '23' + ' years old');//auto converts anything after + to a string
+console.log('23' - '10' - 3);
+console.log('23' * '2');
+
+let n = '1' + 1; //result is string '11'
+n = n - 1;
+console.log(n); //answer is 10
+*/
+
+//Truthy and Falsy values
+// 5 Falsy values: 0, '', undefined, null, NaN (falsy values = false vaules that are not false but become false when converting into a boolean)
+/*
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean("jonas"));
+console.log(Boolean({}));
+
+const money = 1;
+if (money) {
+    console.log("don't spend it all");
+} else {
+    console.log('you should get a job!');
+}
+
+let height;
+if (height) {
+    console.log('YAY! Height is defined');
+} else {
+    console.log('Height is UNDEFINED')
+}
+*/
+
+/*
+//Equality operators === / ==
+const age = '18';
+if (age === 18) console.log('you just became an adult'); //Strict
+
+if (age == 18) console.log('you just became an adult'); //Loose
+
+
+const favorite = Number(prompt("what's your favorite number?"));
+console.log(favorite);
+console.log(typeof favorite);
+
+if (favorite === 23) { //'23' == 23  / 23 === 23
+    console.log('cool! 23 is a cool number!')
+} else if (favorite === 7) {
+    console.log('7 is also a cool nunmber')
+} else if (favorite === 9) {
+    console.log('9 is also a cool nunmber')
+} else {
+    console.log('number is not 23 or 7 pr 9')
+}
+
+if (favorite !== 23) console.log('why not 23?');
+*/
+
+
+//Boolean Logic  - Logical Operators
+const hasDriversLicense = true; //A
+const hasGoodVision = true; //B
+
+console.log(hasDriversLicense && hasGoodVision); // &&-AND Operator (True when all are true)
+console.log(hasDriversLicense || hasGoodVision); // ||-OR Operator (True when one var is true)
+console.log(!hasDriversLicense); // !-NOT Operator (inverts true/false values)
+console.log(!hasGoodVision);
+
+// if (hasDriversLicense && hasGoodVision) {
+//     console.log('Sarah is able to drive')
+// } else {
+//     console.log('Someone else should drive')
+// }
+
+const isTired = false; // variable C
+console.log(hasDriversLicense && hasGoodVision && isTired)
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+    console.log('Sarah is able to drive')
+} else {
+    console.log('Someone else should drive')
+}
